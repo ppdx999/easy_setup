@@ -2,13 +2,24 @@
 
 ###############################################################################
 #
-# init_setup.sh - Initial setup for new unix like os.
+# unix_client_setup.sh - Initial setup for new unix like os.
 #
 # USAGE       :  init_setup.sh 
-# DESCRIPTION :  Install git, curl (or wget) ppdx999/dotfile ppdx999/bin ppdx999/format
+# DESCRIPTION :  Install below softwares
+#                  - git
+#                  - curl
+#                  - ppdx999/dotfile
+#                  - ppdx999/bin
+#                  - ppdx999/format
+#                  - shellshockccar
+#                  - ffmpeg
+#                  - GIMP
+#                  - VIM
+#                  - zoom
+#                  - google-chrome
 # 
 # 
-# Written by ppdx999 on 2020-08-14
+# Written by ppdx999 on 2020-08-21
 # 
 # 
 # This is a public-domain software (CC0). It means that all of the
@@ -44,10 +55,21 @@ error_exit() {
 }
 
 print_usage_and_exit () {
-  cat <<-USAGE 1>&2
-	Usage   : ${0##*/} [--prefix=/PATH/TO/INSTALL/DIR] <install|uninstall>
-	Version : 2019-05-22 21:32:36 JST
-	USAGE
+  cat <<-USAGE_END 1>&2
+	Usage   : ${0##*/} 
+  DESCRIPTION :  Install below softwares
+                   - git
+                   - curl
+                   - ppdx999/dotfile
+                   - ppdx999/bin
+                   - ppdx999/format
+                   - shellshockccar
+                   - ffmpeg
+                   - GIMP
+                   - VIM
+                   - zoom
+                   - google-chrome
+USAGE_END
   exit 1
 }
 
